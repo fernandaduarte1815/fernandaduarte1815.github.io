@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Warner Music Group</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/jquery-3.4.1.js"></script>
+
+  <script>
+    function procesaFormulario(){
+           var trackid= document.getElementsByName("trackid");
+           var name= document.getElementsByName("name");
+           var albumid= document.getElementsByName("albumid");
+           var mediatypeid= document.getElementsByName("mediatypeid");
+           var genreid= document.getElementsByName("genreid");
+           var composer= document.getElementsByName("composer");
+           var milliseconds= document.getElementsByName("milliseconds");
+           var bytes= document.getElementsByName("bytes");
+           var unitprice= document.getElementsByName("unitprice");
+
+          var doc = new jsPDF()
+          doc.text()
+      }
+  </script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="logo.png" width="60" height="60" alt="">
+  </a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="trabajofrontend.html">Warner Music Group</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="trabajofrontend.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" 
+  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Category
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="playlist.html">Playlist</a>
+    <a class="dropdown-item" href="invoice.html">Invoice</a>
+    <a class="dropdown-item" href="album.html">Album</a>
+    <a class="dropdown-item" href="track.html">Track</a>
+    <a class="dropdown-item" href="genre.html">Genre</a>
+    <a class="dropdown-item" href="artist.html">Artist</a>
+    <a class="dropdown-item" href="mediatype.html">MediaTypeId</a>
+    <a class="dropdown-item" href="customer.html">Customer</a>
+    <a class="dropdown-item" href="employee.html">Employee</a>
+  
+  </div>      <li class="nav-item">
+
+</div>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+</nav>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+  <div class="container">
+    
+    <tr>
+            <td class="text-rigth" style="vertical-align: middle;">TrackId </td>
+            <td>
+              <input name="trackid" type="int" required class="form-control">
+            </td>
+    </tr>
+
+     <tr>
+            <td class="text-rigth" style="vertical-align: middle;">Name </td>
+            <td>
+              <input name="name" type="text" required class="form-control">
+            </td>
+    </tr>
+
+    <tr>
+            <td class="text-rigth" style="vertical-align: middle;">AlbumId </td>
+            <td>
+              <input name="albumid" type="int" required class="form-control">
+            </td>
+    </tr>
+
+    <tr>
+            <td class="text-rigth" style="vertical-align: middle;">MediaTypeId </td>
+            <td>
+              <input name="mediatypeid" type="int" required class="form-control">
+            </td>
+    </tr>
+
+    <tr>
+            <td class="text-rigth" style="vertical-align: middle;">GenreId </td>
+            <td>
+              <input name="genreid" type="int" required class="form-control">
+            </td>
+    </tr>
+
+    <tr>
+            <td class="text-rigth" style="vertical-align: middle;">Composer </td>
+            <td>
+              <input name="composer" type="text" required class="form-control">
+            </td>
+    </tr>
+
+    <tr>
+            <td class="text-rigth" style="vertical-align: middle;">Milliseconds </td>
+            <td>
+              <input name="milliseconds" type="int" required class="form-control">
+            </td>
+    </tr>
+
+    <tr>
+            <td class="text-rigth" style="vertical-align: middle;">Bytes </td>
+            <td>
+              <input name="bytes" type="int" required class="form-control">
+            </td>
+    </tr>
+
+    <tr>
+            <td class="text-rigth" style="vertical-align: middle;">UnitPrice </td>
+            <td>
+              <input name="unitprice" type="decimal" required class="form-control">
+            </td>
+    </tr>
+
+
+
+          <tr>
+            <td class="text-center" colspan="2">
+              <input type="submit" class="btn btn-primary" value="Guardar" >
+              <a href="track.html" class="btn btn-danger">Cancelar </a>
+            </td>
+          </tr>
+
+</div>
+<script src="js/bootstrap.js"></script>
+
+</body>
+</html>

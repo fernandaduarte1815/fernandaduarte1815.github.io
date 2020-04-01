@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Warner Music Group</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/jquery-3.4.1.js"></script>
+
+  <script>
+    function procesaFormulario(){
+           var customerid= document.getElementsByName("customerid");
+           var firstname= document.getElementsByName("firstname");
+           var lastname= document.getElementsByName("lastname");
+           var title= document.getElementsByName("title");
+           var reportsto= document.getElementsByName("reportsto");
+           var birthdate= document.getElementsByName("birthdate");
+           var hiredate= document.getElementsByName("hiredate");
+           var address= document.getElementsByName("address");
+           var city= document.getElementsByName("city");
+           var state= document.getElementsByName("state");
+           var country= document.getElementsByName("country");
+           var postalcode= document.getElementsByName("postalcode");
+           var phone= document.getElementsByName("phone");
+           var fax= document.getElementsByName("fax");
+           var email= document.getElementsByName("email");
+           var supportreid= document.getElementsByName("supportreid");
+
+          var doc = new jsPDF()
+          doc.text()
+      }
+  </script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="logo.png" width="60" height="60" alt="">
+  </a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="trabajofrontend.html">Warner Music Group</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="trabajofrontend.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" 
+  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Category
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="playlist.html">Playlist</a>
+    <a class="dropdown-item" href="invoice.html">Invoice</a>
+    <a class="dropdown-item" href="album.html">Album</a>
+    <a class="dropdown-item" href="track.html">Track</a>
+    <a class="dropdown-item" href="genre.html">Genre</a>
+    <a class="dropdown-item" href="artist.html">Artist</a>
+    <a class="dropdown-item" href="mediatype.html">MediaTypeId</a>
+    <a class="dropdown-item" href="customer.html">Customer</a>
+    <a class="dropdown-item" href="employee.html">Employee</a>
+  </div>      
+  <li class="nav-item">
+
+</div>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+</nav>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+  <div class="container">
+    
+    <tr>
+            <td class="text-rigth" style="vertical-align: middle;">EmployeeId </td>
+            <td>
+              <input name="employeeid" type="int" required class="form-control">
+            </td>
+    </tr>
+
+    
+  <tr>
+            <td class="text-rigth" style="vertical-align: middle;">LastName </td>
+            <td>
+              <input name="lastname" type="text" required class="form-control">
+            </td>
+    </tr>
+
+    <tr>
+            <td class="text-rigth" style="vertical-align: middle;">FirstName </td>
+            <td>
+              <input name="firstname" type="text" required class="form-control">
+            </td>
+    </tr>
+
+      <tr>
+            <td class="text-rigth" style="vertical-align: middle;">Title </td>
+            <td>
+              <input name="title" type="text" required class="form-control">
+            </td>
+    </tr>
+
+      <tr>
+            <td class="text-rigth" style="vertical-align: middle;">ReportsTo </td>
+            <td>
+              <input name="reportsto" type="text" required class="form-control">
+            </td>
+    </tr>
+
+
+      <tr>
+            <td class="text-rigth" style="vertical-align: middle;">BirthDate </td>
+            <td>
+              <input name="birthdate" type="datetime" required class="form-control">
+            </td>
+    </tr>
+
+      <tr>
+            <td class="text-rigth" style="vertical-align: middle;">HireDate </td>
+            <td>
+              <input name="hiredate" type="datetime" required class="form-control">
+            </td>
+    </tr>
+
+      <tr>
+            <td class="text-rigth" style="vertical-align: middle;">Address </td>
+            <td>
+              <input name="address" type="text" required class="form-control">
+            </td>
+    </tr>
+
+    <tr>
+            <td class="text-rigth" style="vertical-align: middle;">City </td>
+            <td>
+              <input name="city" type="text" required class="form-control">
+            </td>
+    </tr>
+
+    <tr>
+            <td class="text-rigth" style="vertical-align: middle;">State </td>
+            <td>
+              <input name="state" type="text" required class="form-control">
+            </td>
+    </tr>
+
+    <tr>
+            <td class="text-rigth" style="vertical-align: middle;">Country </td>
+            <td>
+              <input name="country" type="text" required class="form-control">
+            </td>
+    </tr>
+
+     <tr>
+            <td class="text-rigth" style="vertical-align: middle;">PostalCode </td>
+            <td>
+              <input name="postalcode" type="text" required class="form-control">
+            </td>
+    </tr>
+
+     <tr>
+            <td class="text-rigth" style="vertical-align: middle;">Phone </td>
+            <td>
+              <input name="phone" type="text" required class="form-control">
+            </td>
+    </tr>
+
+     <tr>
+            <td class="text-rigth" style="vertical-align: middle;">Fax </td>
+            <td>
+              <input name="fax" type="text" required class="form-control">
+            </td>
+    </tr>
+
+     <tr>
+            <td class="text-rigth" style="vertical-align: middle;">Email </td>
+            <td>
+              <input name="email" type="text" required class="form-control">
+            </td>
+    </tr>
+
+     
+
+
+          <tr>
+            <td class="text-center" colspan="2">
+              <input type="submit" class="btn btn-primary" value="Guardar" >
+              <a href="employee.html" class="btn btn-danger">Cancelar </a>
+            </td>
+          </tr>
+
+</div>
+
+<script src="js/bootstrap.js"></script>
+
+</body>
+</html>
